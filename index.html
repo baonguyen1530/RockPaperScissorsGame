@@ -12,10 +12,14 @@
     <h1 id="title">Rock - Paper - Scissors</h1>
 
     <div id="choices">
-        <button id="rockBtn" class="buttons">✊</button>
-        <button id="paperBtn" class="buttons">✋</button>
-        <button id="scissorsBtn" class="buttons">✌️</button>
+        <button onclick="playGame('rock')">✊</button>
+        <button onclick="playGame('paper')">✋</button>
+        <button onclick="playGame('scissors')">✌️</button>
     </div>
+    
+    <div id="player_display">PLAYER: </div>
+    <div id="computer_display">COMPUTER: </div>
+    <div id="result_display">RESULT: </div>
     
     <script src="script.js"></script>
 </body>
