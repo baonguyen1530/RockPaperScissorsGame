@@ -13,14 +13,18 @@ function playGame(player_choice){
     }
 
     //these are the cases that the player loses
-    else if((player_choice === "rock" && computer_choice === "paper") || (player_choice === "paper" && computer_choice === "scissors") || (player_choice === "scissors" && computer_choice === "rock")){
+    else if((player_choice === "rock" && computer_choice === "paper") || 
+    (player_choice === "paper" && computer_choice === "scissors") || 
+    (player_choice === "scissors" && computer_choice === "rock")){
         player_display.textContent = `PLAYER: ${player_choice.toUpperCase()}`;
         computer_display.textContent = `COMPUTER: ${computer_choice.toUpperCase()}`;
         result_display.textContent = "You lost";
     }
 
     //these are the cases that the player wins
-    else if((player_choice === "paper" && computer_choice === "rock") || (player_choice === "scissors" && computer_choice === "paper") || (player_choice === "rock" && computer_choice === "scissors")){
+    else if((player_choice === "paper" && computer_choice === "rock") || 
+    (player_choice === "scissors" && computer_choice === "paper") || 
+    (player_choice === "rock" && computer_choice === "scissors")){
         player_display.textContent = `PLAYER: ${player_choice.toUpperCase()}`;
         computer_display.textContent = `COMPUTER: ${computer_choice.toUpperCase()}`;
         result_display.textContent = "You won";
